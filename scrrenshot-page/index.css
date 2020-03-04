@@ -1,0 +1,202 @@
+html{
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+}
+#background {
+    font-size: 16px;
+}
+
+#enlargement {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    height: 200px;
+    z-index: 1001;
+    background-color: #fff;
+    overflow: hidden;
+}
+#enlargement div:nth-child(1){
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 73px;
+    height: 98px;
+    border-right: 2px dashed #111;
+    border-bottom: 2px dashed #111;
+}
+#enlargement div:nth-child(2){
+    position: absolute;
+    left: 75px;
+    top: 0;
+    width: 75px;
+    height: 98px;
+    border-bottom: 2px dashed #111;
+}
+#enlargement div:nth-child(3){
+    position: absolute;
+    left:0;
+    top: 100px;
+    width: 73px;
+    height: 100px;
+    border-right: 2px dashed #111;
+}
+#size{
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+}
+#getAction {
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    width: 240px;
+    height: 30px;
+    padding: 3px 5px;
+    border: 1px solid #111;
+    border-radius: 2px;
+    z-index: 1001;
+    text-align: left;
+    top: 0;
+    left: 0;
+}
+#getAction div {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#getAction div img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+#action {
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    width: 30px;
+    height: 180px;
+    padding: 5px 0;
+    border: 1px solid #111;
+    border-radius: 2px;
+    z-index: 1001;
+}
+#action div{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    cursor: pointer;
+}
+#action div.active{
+    background-color: #c9d2cb;
+}
+#action div img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 2px;
+}
+#action div #qs {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 2px;
+}
+#action_qs {
+    position: relative;
+}
+#action #color-picker {
+    display: none;
+    position: absolute;
+    width: 261px;
+    height: 220px;
+    background: #fff;
+    left: -285px;
+    top: -196px;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,0.1);
+}
+#action #color-picker .picker-wrapper {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px; height: 200px 
+}
+#action #color-picker .picker-wrapper .picker{
+    width: 200px; height: 200px 
+}
+#action #color-picker .slide-wrapper { 
+    position: absolute;
+    top: 10px;
+    left: 220px;
+    width: 30px; height: 200px 
+}
+#action #color-picker .slide-wrapper .slide{
+    width: 30px; height: 200px 
+}
+
+#action #color-picker .picker-wrapper .picker-indicator,
+#action #color-picker .slide-wrapper .slide-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+
+/* Default skin */
+
+#action #color-picker .picker-wrapper .picker-indicator {
+    width: 5px!important;
+    height: 5px!important;
+    border: 2px solid darkblue;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    filter: alpha(opacity=50);
+    background-color: white;
+}
+#action #color-picker .slide-wrapper .slide-indicator {
+    width: 100%!important;
+    height: 10px!important;
+    left: -4px;
+    opacity: .6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+    filter: alpha(opacity=60);
+    border: 4px solid lightblue;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+
+
